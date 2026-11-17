@@ -5,7 +5,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>JP Servicios Sanitarios · Plomero 24 h y detección de fugas sin romper</title>
-<meta name="description" content="Plomería en CABA y zona sur: detección de fugas sin romper con cámara termográfica y geófono, termotanques, calefones, bombas presurizadoras y baños. Urgencias las 24 h, con garantía.">
+<meta name="description" content="Plomería en CABA y zona sur: detección de fugas sin romper con cámara termográfica y geófono, termotanques, calefones, calderas para piscinas y losa radiante, bombas presurizadoras y baños. Urgencias las 24 h, con garantía.">
 <meta name="theme-color" content="#123E8C">
 <meta property="og:type" content="website">
 <meta property="og:title" content="JP Servicios Sanitarios · Plomero 24 h">
@@ -24,7 +24,7 @@
   "@context": "https://schema.org",
   "@type": "Plumber",
   "name": "JP Servicios Sanitarios",
-  "description": "Plomería, detección de fugas sin romper con cámara termográfica y geófono, termotanques, calefones, bombas presurizadoras y baños. Urgencias las 24 horas.",
+  "description": "Plomería, detección de fugas sin romper con cámara termográfica y geófono, termotanques, calefones, calderas para piscinas y losa radiante, bombas presurizadoras y baños. Urgencias las 24 horas.",
   "telephone": "+54 9 11 2311-8181",
   "image": "img/tanque-agua-900.jpg",
   "priceRange": "$$",
@@ -143,6 +143,8 @@ svg.i{width:1.2em;height:1.2em;flex:none}
 
 /* Servicios */
 .servicios{display:grid;gap:18px;margin-top:34px}
+@media (min-width:640px){.servicios{display:flex;flex-wrap:wrap;justify-content:center}.servicios .svc{flex:0 0 calc((100% - 18px)/2)}}
+@media (min-width:1000px){.servicios .svc{flex-basis:calc((100% - 36px)/3)}}
 .svc{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sombra);display:flex;flex-direction:column}
 .svc picture{aspect-ratio:4/3;overflow:hidden;background:#E8EEF9}
 .svc picture img{width:100%;height:100%;object-fit:cover}
@@ -151,8 +153,6 @@ svg.i{width:1.2em;height:1.2em;flex:none}
 .svc p{font-size:16px}
 .svc .mini{margin-top:auto;padding-top:10px;display:inline-flex;align-items:center;gap:7px;font-weight:700;color:var(--wa-osc);text-decoration:none;font-size:15px}
 .svc .mini:hover{text-decoration:underline}
-@media (min-width:640px){.servicios{grid-template-columns:repeat(2,1fr)}}
-@media (min-width:1000px){.servicios{grid-template-columns:repeat(4,1fr)}}
 .otros{margin-top:30px;background:#fff;border-radius:var(--r);padding:24px;box-shadow:var(--sombra)}
 .otros h3{font-size:19px;margin-bottom:14px}
 .otros ul{list-style:none;margin:0;padding:0;display:grid;gap:10px 24px}
@@ -328,10 +328,14 @@ svg.i{width:1.2em;height:1.2em;flex:none}
       </article>
       <article class="svc">
         <picture><source type="image/webp" srcset="img/termotanque-480.webp"><img src="img/termotanque-480.jpg" alt="Termotanque instalado en una cocina" width="480" height="640" loading="lazy"></picture>
-        <div class="cuerpo"><h3>Termotanques, calefones y calderas</h3><p>Colocación, cambio y reparación. Te asesoramos sobre el equipo que conviene para tu casa.</p><a class="mini" href="#" data-wa="Hola, quería consultar por un termotanque / calefón / caldera." data-ev="whatsapp" data-donde="svc-termotanques"><svg class="i"><use href="#i-wa"/></svg>Consultar</a></div>
+        <div class="cuerpo"><h3>Termotanques y calefones</h3><p>Colocación, cambio y reparación. En el recambio, dejamos el equipo nuevo conectado a la toma de gas que ya existe.</p><a class="mini" href="#" data-wa="Hola, quería consultar por un termotanque / calefón." data-ev="whatsapp" data-donde="svc-termotanques"><svg class="i"><use href="#i-wa"/></svg>Consultar</a></div>
       </article>
       <article class="svc">
-        <picture><source type="image/webp" srcset="img/bomba-presurizadora-480.webp"><img src="img/bomba-presurizadora-480.jpg" alt="Instalación de bomba y equipo de agua" width="480" height="640" loading="lazy"></picture>
+        <picture><source type="image/webp" srcset="img/caldera-piscina-480.webp"><img style="object-position:center 25%" src="img/caldera-piscina-480.jpg" alt="Caldera para climatizar una piscina, instalada por JP Servicios Sanitarios" width="480" height="640" loading="lazy"></picture>
+        <div class="cuerpo"><h3>Calderas, piscinas y losa radiante</h3><p>Instalación y reparación de calderas para climatizar piscinas y para calefacción por losa radiante.</p><a class="mini" href="#" data-wa="Hola, quería consultar por una caldera para piscina / losa radiante." data-ev="whatsapp" data-donde="svc-calderas"><svg class="i"><use href="#i-wa"/></svg>Consultar</a></div>
+      </article>
+      <article class="svc">
+        <picture><source type="image/webp" srcset="img/bomba-presurizadora-480.webp"><img src="img/bomba-presurizadora-480.jpg" alt="Bomba presurizadora instalada junto a un calefón" width="480" height="640" loading="lazy"></picture>
         <div class="cuerpo"><h3>Bombas presurizadoras</h3><p>Si te sale poca agua en la ducha o en el piso de arriba, instalamos la bomba que necesitás.</p><a class="mini" href="#" data-wa="Hola, quería consultar por una bomba presurizadora." data-ev="whatsapp" data-donde="svc-bombas"><svg class="i"><use href="#i-wa"/></svg>Consultar</a></div>
       </article>
       <article class="svc">
@@ -347,7 +351,7 @@ svg.i{width:1.2em;height:1.2em;flex:none}
         <li><svg class="i"><use href="#i-ok"/></svg>Desagües pluviales y cloacas</li>
         <li><svg class="i"><use href="#i-ok"/></svg>Soldadura y reparación de caños de plomo e hidrobronz</li>
       </ul>
-      <p class="no-gas">No hacemos instalaciones de gas.</p>
+      <p class="no-gas">No hacemos instalaciones de gas: eso lo hace un gasista matriculado. Cuando cambiamos un termotanque o un calefón, sí lo conectamos a la toma que ya existe.</p>
     </div>
   </div>
 </section>
@@ -411,7 +415,7 @@ svg.i{width:1.2em;height:1.2em;flex:none}
       <details><summary>¿Hay que romper mucho para arreglar una pérdida?</summary><p>No. Con el geófono y la cámara termográfica ubicamos la pérdida en el lugar exacto, así abrimos solo un tramo chico en vez de levantar toda la pared o el piso.</p></details>
       <details><summary>¿Los trabajos tienen garantía?</summary><p>Sí, todos nuestros trabajos tienen garantía. Antes de empezar te contamos qué incluye.</p></details>
       <details><summary>¿Trabajan para consorcios y empresas?</summary><p>Sí. Además de casas particulares, trabajamos para consorcios y empresas: cañerías generales, tanques de agua, bombas y desagües.</p></details>
-      <details><summary>¿Hacen instalaciones de gas?</summary><p>No, no hacemos instalaciones de gas. Nos dedicamos a la plomería de agua, desagües, termotanques, calefones, calderas y baños.</p></details>
+      <details><summary>¿Hacen instalaciones de gas?</summary><p>No, las instalaciones de gas las tiene que hacer un gasista matriculado. Cuando cambiamos un termotanque o un calefón, sí lo dejamos conectado a la toma de gas que ya existe, con un flexible. Nos dedicamos a la plomería de agua, desagües, termotanques, calefones, calderas y baños.</p></details>
       <details><summary>¿Cómo pido un presupuesto?</summary><p>Escribinos por <a href="#" data-wa="Hola, quería pedir un presupuesto." data-ev="whatsapp" data-donde="faq">WhatsApp</a> contando qué pasa, y si podés mandanos fotos o un video. Con eso te damos una idea del trabajo y coordinamos la visita.</p></details>
     </div>
   </div>
